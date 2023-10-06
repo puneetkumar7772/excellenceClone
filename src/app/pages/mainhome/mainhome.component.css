@@ -7,28 +7,32 @@
 .first_section{
   position: relative;
   min-height: 51vw;
-  background: linear-gradient( 25deg,rgba(0,182,152,0.5),rgba(114,78,244,0.5));
+  background: linear-gradient( 45deg,rgba(0,182,152,0.5),rgba(114,78,244,0.5));
   background-size: cover;
+
 }
-#video-container {
+.video-container {
   width: 100%;
   height: 100%;
   position: absolute;
   object-fit: cover;
-  z-index: -1;
+  /* z-index: -1 */
 }
+
 .logo{
   width: 25%;
 position: absolute;
 top: 4rem;
 left: 34rem;
+color: black;
 }
 .software{
-  color:#fff;
+  color:black;
   font-size: 39px;
   text-align: center;
   position: relative;
   top: 14rem;
+  font-weight: bold;
 }
 .btn1{
   position: relative;
@@ -36,12 +40,12 @@ top: 19rem;
 left: 35rem;
 font-size: 32px;
 }
-button {
+.btn1 {
   --color: #560bad;
   font-family: inherit;
   display: inline-block;
-  width: 8em;
-  height: 2.3em;
+  width: 9em;
+  height: 3.3em;
   line-height: 2.5em;
   margin: 20px;
   position: relative;
@@ -49,23 +53,67 @@ button {
   border: 2px solid var(--color);
   transition: color .5s;
   z-index: 1;
-  font-size: 14px;
+  font-size: 25px;
   border-radius: 6px;
   font-weight: 500;
  }
 
 
- button:hover {
+ .btn1:hover {
   color: blue;
  }
 
- button:active:before {
+ .btn1:active:before {
   background: #fff;
  }
+ .btn3{
+  background: -webkit-linear-gradient(#00b698,#8e71f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    padding: 12px 18px;
+    transition: all ease-in .8s;
+    font-family: typold-regular;
+    outline: none;
+    position: relative;
+    transform: skewX(-5deg);
+    font-size: 1.2em;
+    text-decoration: none;
+    border: none;
+ }
+
+ .btn3::before, .btn3::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  opacity: 0;
+  border: 2px solid;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transform: skewX(-10deg);
+  transition: all ease-in .8s;
+  border-image: linear-gradient(45deg,#00b698,#8e71f6) 1;
+ }
+
+ .btn3::before {
+  top: 0;
+  left: 0;
+  border-width: 0 0 2px 2px;
+ }
+ .btn3::after {
+  right: 0;
+  bottom: 0;
+  border-width: 2px 2px 0 0;
+ }
+ /* .btn3:hover::after{
+
+ } */
 .main_heading{
   color:#6b53ef;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 13px;
   position: relative;
   display: inline-block;
 }
@@ -100,7 +148,7 @@ font-weight: 600;
 padding-top: 28px;
 }
 .business_para{
-  font-size: 25px;
+  font-size: 22px;
   color: black;
   text-align: center;
   font-weight: 600;
@@ -138,7 +186,7 @@ padding-top: 28px;
   flex-wrap: wrap;
   gap:10px;
   padding-top: 3rem;
-  padding-left: 2.5rem;
+margin: auto;
 }
 .image_logo{
  padding-left: 75px;
@@ -212,7 +260,7 @@ gap: 32px;
 
 }
 .fourth_para2{
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   padding-right: 3rem;
   font-family: typold-thin;
@@ -239,7 +287,7 @@ margin-top: 3rem;
   font-family: typold-medium
 }
 .paras2 {
-  font-size: 22px;
+  font-size: 20px;
   color: #777;
   font-family: typold-thin
 }
@@ -274,6 +322,10 @@ flex-wrap: wrap;
 }
 .form_subsection{
   width: 52%;
+  padding-left: 2rem;
+}
+.form_btn{
+  padding-left: 2rem;
 }
 .form_subsection1{
   width: 45%;
@@ -566,6 +618,7 @@ a {
   }
   .form_subsection{
     width: 98%;
+    padding-left: 1rem;
   }
   .form_subsection1{
     width: 98%;
@@ -576,7 +629,9 @@ a {
   .image_section{
     width: 75%;
   }
-
+  .form_btn{
+    padding-left: 1rem;
+  }
 }
 
 .animated-element {
