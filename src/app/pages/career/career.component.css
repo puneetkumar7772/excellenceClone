@@ -1,0 +1,309 @@
+/* first para */
+
+.career {
+  position: absolute;
+  left: 55px;
+  top: 0px;
+  right: 0px;
+  width: 95.3vw;
+}
+.firstsection {
+  width: 95.3vw;
+  height:auto;
+  background-image: linear-gradient(to right top, #34c4ad, #817fea 70%);
+}
+.firsthed {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+}
+.subhed1 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: bold;
+}
+.subhed2 {
+  font-size: 50px;
+  color: black;
+  font-weight: bold;
+  padding-top: 12px;
+}
+
+
+.work {
+  padding-top: 2rem;
+  color: #413ef0;
+  font-weight: 600px;
+  padding-left: 3.5rem;
+  font-size: 17px;
+  position: relative;
+  font-weight: bold;
+}
+
+.work::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 4.7vw;
+  height: 3px;
+  background: #724ef4;
+  position: absolute;
+  left: 0;
+  top:73%;
+  transition: .2s
+}
+
+.work::after {
+  content: "REASONS TO WORK HERE";
+  margin-left: 30px;
+}
+
+/* second part */
+/*  section 2*/
+.subhed3 {
+  padding-top: 2rem;
+  color: #413ef0;
+  font-weight: 600px;
+  padding-left: 3.5rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+.subhed3{
+  position: relative;
+  font-weight: bold;
+}
+
+.subhed3::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 4.7vw;
+  height: 3px;
+  background: #724ef4;
+  position: absolute;
+  left: 0;
+  top:70%;
+  transition: .2s
+}
+
+.subhed3::after {
+  content: "JOIN THE TEAM";
+  margin-left: 30px;
+}
+.subhed4 {
+  padding-top: 25px;
+  padding-left: 55px;
+  font-size: 55px;
+  color: #413ef0;
+  font-weight: bold;
+}
+.row {
+  width: 95.3vw;
+  padding-left: 55px;
+  padding-top: 40px;
+}
+
+.jobdesc {
+  padding-top: 25px;
+}
+.jobfooter {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+a {
+  text-decoration: none;
+  color: #413ef0;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* start third section */
+.thirdsection {
+  width: 95.3vw;
+  height: 55vh;
+  margin-top: 5rem;
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1) 40%,
+    rgba(0, 182, 152, 0.3) 100%
+  );
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 20px;
+}
+.para1 {
+  font-size: 16px;
+}
+.team{
+  margin-top: 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap:11vw;
+  padding-left: 3.5rem;
+  }
+.team_subsection{
+  display: grid;
+  grid-template-rows: 3;
+  gap: 10px;
+}
+.team_footer{
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+}
+.btn1{
+  color:#337ab7;
+  font-weight: 500;
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+}
+.btn1::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 15px;
+  height: 2px;
+  background-color: #6b53ef;
+  transition: width 0.3s ease;
+  cursor: pointer;
+}
+
+.btn1:hover::before {
+  width: 100%;
+  left: 0;
+}
+/* .cards
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 3rem;
+}
+.imglogo{
+  margin: auto;
+  margin-top: 4%;
+  padding-left: 20px;
+}
+.cardhed{
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+} */
+/* footer start */
+ul {
+  list-style: none;
+  text-align: left;
+  padding: 0 1vw;
+}
+li {
+  padding: 0.3vw 0px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+.footerhed {
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0 1vw;
+}
+/* footer end */
+/* For Mobile Devices */
+@media (max-width: 768px) {
+  .firstsection {
+    height: auto;
+    width: 93vw;
+  }
+
+  .firsthed {
+    padding-top: 5%;
+  }
+
+  .subhed1 {
+    font-size: 17px;
+  }
+
+  .subhed2 {
+    font-size: 32px;
+    padding-top: 6px;
+  }
+
+  .career {
+    left: 20px;
+    right: 20px;
+    width: auto;
+  }
+  .subhed4{
+    font-size: 23px;
+    padding-left: 0px;
+  }
+  .team{
+    display: flex;
+    flex-wrap: wrap;
+    gap:3rem;
+    padding-left:0rem;
+    }
+    .subhed3{
+      padding-top: 1.5rem;
+      padding-left: 0rem;
+    }
+    .jobdesc {
+      padding-top: 20px;
+    }
+    .row{
+      width: 80.3vw;
+      padding-left: 4px;
+      padding-top: 40px;
+    }
+}
+
+/* For Tablet Devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .subhed1 {
+    font-size: 32px;
+  }
+
+  .subhed2 {
+    font-size: 40px;
+    padding-top: 8px;
+  }
+
+  .career {
+    left: 40px;
+    right: 40px;
+    width: auto;
+  }
+  .subhed4{
+    font-size: 45px;
+  }
+
+}
+.animated-element {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.another-element {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 2s, transform 2s;
+}

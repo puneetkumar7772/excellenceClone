@@ -1,0 +1,338 @@
+.contact {
+  position: absolute;
+  left: 55px;
+  top: 0px;
+  right: 0px;
+  width: 95.3vw;
+}
+.heading {
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.number{
+padding-top: 1rem;
+}
+#heading {
+  text-align: center;
+  font-size: 50px;
+  color: #7555ea;
+}
+.firstpara {
+  margin: auto;
+  text-align: center;
+  font-size: 22px;
+  color: gray;
+  padding-top: 2rem;
+}
+.secondpara {
+  margin: auto;
+  text-align: center;
+  font-size: 22px;
+  color: gray;
+}
+.row {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+.coldiv {
+  background-color: #9aeadc;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.coldiv:hover {
+  background-color: #7ac6af;
+}
+.number {
+  text-align: center;
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+}
+.hed {
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+a {
+  text-decoration: none;
+}
+.section3 {
+  background-color: #fff;
+  width: 95.3vw;
+  padding: 52px 48px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.formrow {
+  display: grid;
+  flex-direction: row;
+  gap: 15px;
+  grid-template-columns: 60% 50%;
+}
+
+.col3 {
+  height: 35vh;
+  text-align: justify;
+  padding-left: 15%;
+}
+.textarea {
+  padding-left: 10px;
+  width: 40vw;
+}
+.heading {
+  color: blue;
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+.subheading {
+  color: black;
+  font-weight: bold;
+  font-size: 1.3vw;
+}
+
+.p4 {
+  text-align: justify;
+  font-size: 20px;
+  color: gray;
+  font-weight: bold;
+}
+
+button {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:active,
+button:hover {
+  outline: 0;
+}
+
+button span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+button:hover span {
+  background: none;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+.text {
+  font-size: 22px;
+}
+.form-control {
+  border: 1px solid black;
+}
+
+/* address start */
+.ineercontant {
+  padding: 20px 20px 20px 20px;
+  padding-top: 28px;
+}
+.ineercontant1 {
+  padding: 20px 20px 20px 20px;
+  padding-top: 12px;
+}
+.ineercontant2 {
+  padding: 20px 20px 20px 20px;
+  padding-top: 15px;
+}
+.office {
+  text-align: center;
+  column-rule: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+.localadd {
+  text-align: center;
+  font-size: 17px;
+  color: gray;
+}
+.city {
+  text-align: center;
+  font-size: 17px;
+  color: gray;
+}
+.pincode {
+  text-align: center;
+  font-size: 17px;
+  color: gray;
+}
+.col3 {
+  padding-top: 20px;
+  color: #808080;
+}
+
+/* Default styles for all screen sizes */
+.ineercontant,
+.ineercontant1,
+.ineercontant2 {
+  padding: 20px;
+  padding-top: 28px;
+}
+/* footer start */
+.footer {
+  margin-top: 5rem;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  padding: 0 1vw;
+}
+li {
+  padding: 0.3vw 0px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+.footerhed {
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0 1vw;
+}
+
+/* footer end */
+/* Media queries for responsiveness */
+/* Media query for all devices */
+@media screen and (max-width: 768px) {
+  button {
+    font-size: 16px;
+    min-width: 120px;
+    padding: 8px;
+  }
+
+  button span {
+    padding: 12px 18px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .row {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .row {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .formrow {
+    grid-template-columns: 1fr;
+  }
+  .textarea {
+    width: 100%;
+    padding-left: 0;
+  }
+  .button-container {
+    width: 100%;
+  }
+  .row {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Media query for all phone-sized screens */
+@media screen and (max-width: 480px) {
+  .row,
+  .section3,
+  .formrow,
+  .textarea,
+  .button-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .heading {
+    margin-top: 3rem;
+  }
+  .firstpara,
+  .secondpara {
+    font-size: 18px;
+  }
+  .number {
+    font-size: 14px;
+  }
+  .hed {
+    font-size: 20px;
+  }
+}
+/* Media query for address phone screens */
+@media (max-width: 768px) {
+  .ineercontant,
+  .ineercontant1,
+  .ineercontant2,
+  .office,
+  .localadd,
+  .city,
+  .pincode,
+  .col3 .contact {
+    width: 100%;
+    padding: 0;
+  }
+}
+.animated-element {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.another-element {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 2s, transform 2s;
+}

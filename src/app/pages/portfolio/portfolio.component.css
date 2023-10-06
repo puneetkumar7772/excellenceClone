@@ -1,0 +1,175 @@
+/* first section strat */
+.portfolio {
+  position: absolute;
+  left: 55px;
+  top: 0px;
+  width: 95.3vw;
+}
+.header {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-top: 3rem;
+}
+.heading {
+  text-align: center;
+  margin-top: 3rem;
+  color: blue;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.first {
+  margin-left: 8rem;
+  margin-top: 10rem;
+}
+.hi {
+  color: rgb(13, 11, 11);
+  font-size: 40px;
+  font-weight: 600;
+}
+.img1 {
+  width: 95%;
+}
+/* first section media query  start*/
+/* Media query for phones */
+
+#heading {
+  text-align: center;
+  color: gray;
+}
+
+.heading3 {
+  margin-top: 5rem;
+  margin-left: 5rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 45px;
+}
+.heading4 {
+  margin-top: 2rem;
+  margin-left: 5rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* section 3rd start */
+.middleSection2 {
+  margin-top: 2rem;
+}
+
+h6 {
+  font-size: 18px;
+  color: #a680ed;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.footer {
+  margin-top: 0.5rem;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* first section media query end*/
+
+.row2 {
+  background-image: url(../../../assets/images/ReactNative.png);
+  height: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.backgray {
+  /* background-image: linear-gradient(to top, rgb(227, 127, 45) 50% ,rgb(201, 250, 39) 100%); */
+  height: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #f7f7f7;
+}
+.backimg {
+  width: 97%;
+  padding-top: 1.5rem;
+}
+.middle {
+  margin-top: 3rem;
+}
+.heading5 {
+  margin-top: 3rem;
+  margin-left: 5rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+}
+.col {
+  margin-bottom: 2rem;
+}
+.row3 {
+  height: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #f7f7f7;
+}
+/* Media query for tablets */
+@media screen and (min-width: 250px) and (max-width: 768px) {
+  .portfolio {
+    left: 10px;
+    top: 0;
+    width:100vw;
+  }
+
+  .header {
+    grid-template-columns: 50% 50%;
+  }
+
+  .heading {
+    margin-top: 2rem;
+    font-size: 28px;
+  }
+
+  .hi {
+    font-size: 36px;
+  }
+  .row2 {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .row3 {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .backgray {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .heading3 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .heading4 {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .heading5 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .first {
+    margin-left: 0rem;
+    margin-top: 0rem;
+  }
+}

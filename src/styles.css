@@ -1,0 +1,171 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  /* width: 95.3px; */
+}
+/* cards css start*/
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+}
+.imglogo {
+  margin: auto;
+  margin-left: 35%;
+  margin-top: 4%;
+  /* padding-left: 20px; */
+}
+.cardhed {
+  font-weight: bold;
+  text-align: center;
+}
+.card:hover {
+  border: 1px solid black;
+  /* transform: scale(1.05); */
+  background-image: linear-gradient(#b7eae2, #ffffff 80%);
+}
+
+.card:active {
+  /* transform: scale(0.95) rotateZ(1.7deg); */
+}
+/* card css end */
+/* footer start */
+.footer {
+  width: 95.3vw;
+  margin-top: 5rem;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(to right top, #34c4ad, #817fea 70%);
+}
+.footericon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.secondfooter {
+  display: grid;
+  grid-template-columns: 20% 30% 50%;
+  text-align: justify;
+}
+
+.footer1 {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  padding: 45px 0px 0px 75px;
+  width: 95.3vw;
+}
+
+.fotertec {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.footerhed {
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+ position: relative;
+ display: inline-block;
+ padding-left: 15px;
+ /* padding: 0 5px; */
+}
+.footerhed::before {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  width: 15px;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.footerhed:hover::before {
+  width: 90%;
+  left: 10%;
+
+}
+/* footer end */
+/* Media Queries */
+@media screen and (max-width: 1018px) {
+  .footer1 {
+    grid-template-columns: 100%;
+    padding: 45px 15px 0px;
+  }
+
+  .secondfooter {
+    display: block;
+  }
+
+  .fotertec {
+    grid-template-columns: 50% 50%;
+  }
+
+  .footericon {
+    justify-content: center;
+  }
+
+  .j1,
+  .j2,
+  .j3 {
+    max-width: none;
+    text-align: center;
+    padding: 10px;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .footerhed {
+    padding: 0;
+  }
+  .footer{
+    width: 100%;
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .footer1 {
+    grid-template-columns: 100%;
+    padding: 45px 15px 0px;
+  }
+
+  .secondfooter {
+    display: block;
+  }
+
+  .fotertec {
+    grid-template-columns: 40% 60%;
+  }
+
+  .footericon {
+    justify-content: center;
+  }
+
+  .j1,
+  .j2,
+  .j3 {
+    max-width: none;
+    text-align: center;
+    padding: 10px;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .footerhed {
+    padding: 0;
+  }
+  .footer{
+    width: 100%;
+    margin-top: 2rem;
+  }
+}

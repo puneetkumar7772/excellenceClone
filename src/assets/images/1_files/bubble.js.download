@@ -1,0 +1,22 @@
+
+
+// Bubble animation 
+var sOffset = $("#our-background").offset().top;
+var shareheight = $(".workedSecondCol").height() + 50;
+$(window).scroll(function() {
+    var scrollYpos = $(window).scrollTop();
+    var diff = sOffset - shareheight;   
+    var scrollCircle = (scrollYpos/diff)*45;    
+    if (scrollYpos > diff) {
+        $("#agency-circle-1").css({
+            'will-change': 'transform',
+            'transform': 'translate3d(-'+scrollCircle+'%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
+            'transform-style': 'preserve-3d'            
+        });
+        $("#agency-circle-2").css({
+            'will-change': 'transform',
+            'transform': 'translate3d('+scrollCircle+'%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
+            'transform-style': 'preserve-3d'            
+        });
+    }
+});
