@@ -44,9 +44,16 @@ h6 {
 }
 .para2 {
   color: #817fea;
-  font-size: 15px;
+  font-size: 13px;
   padding-left: 3rem;
   padding-top: 1.5rem;
+}
+.our_para{
+  color: #817fea;
+  font-size: 17px;
+  padding-left: 3rem;
+  padding-top: 1.5rem;
+  font-weight: 600;
 }
 .heading2 {
   color: #817fea;
@@ -62,14 +69,15 @@ h6 {
   width: 91.2vw;
 }
 .para3 {
-  font-size: 18px;
-  padding-left: 2rem;
-  color: gray;
+  font-family: typold-thin;
   font-weight: 600;
+  font-size:20px;
+  padding-left: 1rem;
+  color: #777;
 }
 .subdiv {
   display: grid;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 32% 38% 30%;
   flex-wrap: wrap;
   padding-top: 3rem;
   padding-left: 1.5rem;
@@ -81,8 +89,9 @@ h6 {
   font-size: 18px;
 }
 .para4 {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
+  font-family: typold-light
 }
 /* fourth section end */
 .fifth {
@@ -110,9 +119,9 @@ h6 {
   color: #492f5c;
 }
 .paras {
-  /* font-family: typold-thin; */
+  font-family: typold-thin;
   color: #777;
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 600;
 }
 /* fifth section end */
@@ -123,15 +132,41 @@ h6 {
 }
 .subsixth {
   display: grid;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 34% 34% 30%;
   flex-wrap: wrap;
   gap: 20px;
   width: 90vw;
 }
 .blog {
-  font-size: 24px;
+  font-size: 20px;
   padding-left: 3rem;
   font-weight: 500;
+}
+
+.blog1 {
+  font-family: typold-book;
+  font-size: 17px;
+  padding-left: 3rem;
+  font-weight: 500;
+  color: #724ef4;
+  position: relative;
+  display: inline-block;
+}
+.blog1::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 3rem;
+  width: 35px;
+  height: 2px;
+  background-color: #6b53ef;
+  transition: width 0.3s ease;
+  cursor: pointer;
+}
+
+.blog1:hover::before {
+  width: 80%;
+  left: 3rem;
 }
 .paras1 {
   font-family: typold-thin;
@@ -289,7 +324,7 @@ ul {
 }
 .copy {
   padding-left: 2rem;
-  margin: auto;
+  padding-top: 1.5rem;
 }
 .bottom {
   margin-bottom: 5rem;
@@ -300,6 +335,10 @@ ul {
 
 .let{
   padding-left: 20px;
+}
+.paras2{
+  color: #777;
+  font-size: 18px;
 }
 @media screen  and (max-width: 1360px){
   .subeight2{
@@ -331,17 +370,29 @@ grid-template-columns: 100%;
     display: grid;
     grid-template-columns: 100%;
   }
+  h6 {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 13px;
+  }
   .heading2 {
-    font-size: 30px;
+    font-size: 22px;
     padding-left: 8px;
   }
   .para3 {
     padding-left: 8px;
+    font-size: 15px;
   }
   .subdiv {
     padding-top: 1rem;
+    padding-left: 0.5rem;
   }
   .para2 {
+    font-size: 13px;
+    padding-left: 1rem;
+    font-weight: 700;
+  }
+  .our_para{
     font-size: 13px;
     padding-left: 1rem;
     font-weight: 700;
@@ -356,7 +407,7 @@ grid-template-columns: 100%;
     padding-left: 12%;
   }
   .para4 {
-    font-size: 15px;
+    font-size: 14px;
   }
   .subsixth {
     display: grid;
@@ -425,6 +476,31 @@ grid-template-columns: 100%;
   .form_btn{
     padding-left: 1rem;
    }
+   .head {
+    font-size: 13px;
+  }
+  #hire {
+    font-size: 27px;
+
+  }
+  .blog1 {
+    font-size: 15px;
+    padding-left: 1rem;
+    font-weight: 500;
+  }
+  .blog1::before {
+    position: absolute;
+    top: 100%;
+    left: 1rem;
+
+  }
+  .blog1:hover::before {
+    width: 80%;
+    left: 1rem;
+  }
+  .let{
+    padding-left: 0px;
+  }
 }
 .animated-element {
   opacity: 0;

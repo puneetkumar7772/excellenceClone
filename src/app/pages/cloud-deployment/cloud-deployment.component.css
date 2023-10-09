@@ -52,6 +52,14 @@ h6 {
   padding-left: 3rem;
   padding-top: 2.5rem;
 }
+.our_para{
+  font-family: typold-thin;
+  color: #6b53ef;
+  font-size: 17px;
+  padding-left: 3rem;
+  padding-top: 2.5rem;
+  font-weight: 600;
+}
 .heading2 {
   color: #817fea;
   font-size: 49px;
@@ -411,6 +419,10 @@ grid-template-columns: 100%;
     padding-left: 1rem;
   }
   .para2 {
+    font-size: 13px;
+    padding-left: 1rem;
+  }
+  .our_para {
     font-size: 13px;
     padding-left: 1rem;
   }
