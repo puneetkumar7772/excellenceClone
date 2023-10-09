@@ -508,17 +508,19 @@ a {
     width: 25%;
   position: absolute;
   top: 0.5rem;
-  left: 7rem;
+  left: 33vw;
+
   }
   .software{
     font-size: 12px;
     position: relative;
-    top:1.8rem;
+    top:10vw;
+    left: -4vw;
   }
   .btn1{
     position: relative;
-  top:1rem;
-  left:6rem;
+  top:12vw;
+  left:38vw;
   font-size: 10px;
   }
   .main_heading{
@@ -652,3 +654,24 @@ a {
 
 
 
+@media screen and (min-width: 280px) and (max-width:574px) {
+  .logo{
+    width: 25%;
+  position: absolute;
+  top: 0.5rem;
+  left: 33vw;
+
+  }
+  .software{
+    font-size: 12px;
+    position: relative;
+    top:10vw;
+    left: -4vw;
+  }
+  .btn1{
+    position: relative;
+    top: 4vw;
+    left: 28vw;
+  font-size: 10px;
+  }
+}

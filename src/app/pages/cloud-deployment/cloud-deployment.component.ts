@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-cloud-deployment',
@@ -6,5 +7,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./cloud-deployment.component.css']
 })
 export class CloudDeploymentComponent {
-
+  ngOnInit() {
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ['<', '>'],
+        responsive: {
+          0: {
+            items: 1
+          },
+        }
+      });
+    });
+  }
 }
