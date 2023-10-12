@@ -218,6 +218,7 @@
   font-size: 16px;
   color: #777;
   font-weight: 600;
+  text-align: justify;
 }
 /* fourth section end */
 .fifth_section{
@@ -249,6 +250,7 @@
   color: #777;
   font-size: 16px;
   font-weight: 600;
+  text-align: justify;
 }
 /* fifth end */
 .seventh_section {
@@ -301,6 +303,7 @@
   font-weight: 500;
   color: gray;
   padding-left: 3rem;
+  text-align: justify;
 }
 .TECHNOLOGIES {
   font-size:18px;
@@ -308,7 +311,7 @@
   font-family: typold-thin;
   font-weight: 600;
 }
-.client_para{
+.client_para1{
   margin-top: 5rem;
 }
 .TechStack {
@@ -342,6 +345,7 @@
   display: flex;
   justify-content: space-around;
   padding-top: 5rem;
+  padding-left: 0.5rem;
 }
 .main_content{
   display: flex;
@@ -506,13 +510,16 @@ grid-template-columns: 100%;
     left: 0px;
   }
   .first_section {
-    width:100%;
+    width:100vw;
   }
   .first_para {
     font-size: 22px;
   }
   .web_heading {
     font-size: 30px;
+  }
+  .third_section{
+    width: 100vw;
   }
   .third_subsection2 {
     display: grid;
@@ -542,6 +549,7 @@ grid-template-columns: 100%;
   }
   .paras1 {
     padding-left: 1rem;
+    text-align: justify;
   }
   .blog {
     font-size: 18px;
@@ -567,7 +575,9 @@ grid-template-columns: 100%;
   }
   .TECHNOLOGIES {
     padding-left: 1rem;
-    font-size: 20px;
+    font-size: 17px;
+    padding-right: 0.5rem;
+    text-align: justify;
   }
   .TechStack {
     padding-left: 1rem;
@@ -613,6 +623,9 @@ grid-template-columns: 100%;
   .React{
     width: 35%;
   }
+  #hire{
+    font-size: 22px;
+  }
   .expo1{
     width: 35%;
   }
@@ -628,16 +641,15 @@ grid-template-columns: 100%;
     padding-left: 0px;
   }
   .para3 {
-    font-size: 18px;
+    font-size: 16px;
     padding-left: 0rem;
     color: gray;
     font-weight: 600;
+    text-align: justify;
   }
-  /* .paras {
-    color: #777;
-    font-size: 16px;
-    font-weight: 600;
-  } */
+  .paras {
+  text-align: justify;
+  }
   .subeight {
     padding-top: 0rem;
   }
@@ -704,6 +716,12 @@ grid-template-columns: 100%;
 .form_btn{
   padding-left: 1rem;
  }
+ .fourth_section {
+width: 98.7vw;
+}
+.foo1{
+  width: 100vw;
+}
 
 
 

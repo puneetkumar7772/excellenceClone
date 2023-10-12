@@ -52,6 +52,17 @@
     padding-top: 60px;
     transition: 0.5s;
     z-index: 100;
+    background: #fff;
+      -webkit-clip-path: polygon(0 0,45% 0,100% 100%,0% 100%);
+      clip-path: polygon(0 0,45% 0,100% 100%,0% 100%);
+      position: fixed;
+      height: 100vh;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 99999;
+      transition: 1s;
+      filter: drop-shadow(8px 0px 4px rgba(145,144,135,0.28));
   }
   .sidenav a {
     padding: 15px 25px;
@@ -104,7 +115,32 @@
   }
  .sidenav{
   left: 0px;
+  width: 250px;
  }
 }
 
-  /* Content area styles */
+@media screen and (max-width:525px) {
+.sidenav{
+  left: 0px;
+  width: 250px;
+  -webkit-clip-path: none;
+  clip-path: none;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  transition: 1s;
+  filter: drop-shadow(8px 0px 4px rgba(145,144,135,0.28));
+}
+.icon{
+  display: none;
+}
+}
+@media screen and (max-width:1440) {
+ .sidenav{
+  left: 45px;
+  width: 50px;
+ }
+}

@@ -25,4 +25,10 @@ export class CloudDeploymentComponent {
       });
     });
   }
+  activeIndex: number = 1; // Set the middle image as active by default
+
+
+  selectImage(index: number) {
+    this.activeIndex = index;
+  }
 }

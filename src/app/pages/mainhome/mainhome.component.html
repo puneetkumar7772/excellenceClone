@@ -1,6 +1,7 @@
 <div class="home">
   <div class="first_section">
-  <video autoplay muted loop class="video-container">
+<!-- <div class="main_section"> -->
+  <video autoplay muted loop id="video-container">
     <source
       src="https://storage.googleapis.com/excellencewebsitelive/Excellencelanding2.mp4"
       type="video/mp4"/>
@@ -12,6 +13,7 @@
         <button class="btn1"> Work With US
         </button>
   </div>
+<!-- </div> -->
   <div class="second_section">
     <p class="main_heading">WE'VE WORKED WITH</p>
   <div>
@@ -40,7 +42,7 @@
         <div class="image_logo"><img  src="./../../../assets/images/web.svg" class="" alt="..." width="45%"></div>
         <div class="card-body">
           <h5 class="card-title">Web Application</h5>
-          <p class="card-text">We develop modern web apps using the latest technologies like react.js, vue.js, angular and other solutions to provide blazing fast and a modern experience. Whether you are looking for PWA, SPA, or SSR apps we have done it all.</p>
+          <p class="card-text">We develop modern web apps using the latest technologies like react.js, vue.js, angular and other solutions to provide blazing fast and a modern experience. Whether you are looking for PWA, SPA, or SSR apps we have done it all native app experience store up and running.</p>
         </div>
       </div>
       <div class="card" style="width: 16rem;">
@@ -49,7 +51,7 @@
          </div>
       <div class="card-body">
           <h5 class="card-title">Mobile Apps</h5>
-          <p class="card-text">We deliver modern app using cutting edge technologies like react native, expo, ionic, flutter.We strongly believe in the importance of delivering multi-platform mobile app solutions for android/ios/windows and still able to provide quick turn around and retain native app experience.</p>
+          <p class="card-text">We deliver modern app using cutting edge technologies like react native, expo, ionic, flutter.We strongly believe in the importance of delivering multi-platform mobile app solutions for android/ios/windows and still able to provide quick turn around and retain.</p>
         </div>
       </div>
       <div class="card" style="width: 16rem;">
@@ -58,7 +60,7 @@
         </div>
         <div class="card-body">
           <h5 class="card-title">eCommerce</h5>
-          <p class="card-text">Looking to quickly run your business online on a budget or to set up a full-service eCommerce store for your customers. We work with industry-leading solutions like Magento, Shopify, WooCommerce to get your store up and running.</p>
+          <p class="card-text">Looking to quickly run your business online on a budget or to set up a full-service eCommerce store for your customers. We work with industry-leading solutions like Magento, Shopify, WooCommerce to get your store up and running for your apps.</p>
         </div>
       </div>
       <div class="card" style="width: 16rem;">
@@ -166,7 +168,45 @@
       <p class="fourth_para2">While adapting new tech stack, we also retain the stable platforms like PHP, Python and work on frameworks like Django, Laravel to maintain/upgrade systems</p>
     </div>
   </div>
+  <div class="clients">
+    <div>
+      <h1 class="clients_heading">WHAT ARE THEY SAYING</h1>
+    </div>
+    <div class="client_1">
+      <p class="client_para">Making our client’s happiness isn’t just about building beautiful websites. It’s about building a relationship,</p>
+      <p class="client_para">earning trust and growing together</p>
+    </div>
+    <div class="cliens_img ">
+      <div class="client_details">
+        <div class="item" [class.active]="activeIndex === 0" (click)="selectImage(0)"><img class="cli_imag" src="../../../assets/images/client1.png" alt=""></div>
+        <div class="client_details2">
+          <h2 class="name">Alexis Manach</h2>
+          <span id="link">https://www.zarpo.com.br</span>
+          <p class="client_desc">The application built by Excellence Technologies has expanded the user base to 5 million and successfully provides all desired features. The team is knowledgable and make themselves available around the clock to solve issues as they arise so that development can continue.</p>
+        </div>
+      </div>
+      <div class="client_details ">
+        <div class="item" [class.active]="activeIndex === 1" (click)="selectImage(1)"><img class="cli_imag" src="../../../assets/images/client2 (1).png" alt=""></div>
+        <div class="client_details2">
+          <h2 class="name">Martin Romanuk</h2>
+          <span id="link">https://nubity.com</span>
+          <p class="client_desc">https://nubity.com
+            Great React developers, they helped us to go forward with all of our requirements. Highly recommendable.</p>
+        </div>
+      </div>
+      <div class="client_details">
+        <div class="item" [class.active]="activeIndex === 2" (click)="selectImage(2)"><img class="cli_imag" src="../../../assets/images/client3.png" alt=""></div>
+        <div class="client_details2">
+          <h2 class="name">Kristian Poulstrup</h2>
+          <span id="link">https://billetto.com</span>
+          <p class="client_desc">Excellence did an excellent job on my project. The tasks were completed on time and to specification. Communication was good and the developers were always positive. 10/10 would recommend it.</p>
+        </div>
+      </div>
 
+    </div>
+    <div></div>
+
+  </div>
   <div class="fifth_section">
     <div class="fifth_subsection">
       <div class="fifth_subection2">
@@ -205,6 +245,8 @@
        </div>
     </div>
   </div>
+
+
   <div class="footer">
     <div class="footer1">
   <div class="firstfooter">

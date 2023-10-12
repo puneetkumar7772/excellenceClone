@@ -112,6 +112,9 @@ h6 {
   width: 80%;
   padding-left: 30%;
 }
+.card-text{
+  text-align: justify;
+}
 .headings {
   font-size: 27px;
   /* font-family: typold-medium; */
@@ -123,6 +126,8 @@ h6 {
   color: #777;
   font-size: 17px;
   font-weight: 600;
+  text-align: justify;
+  padding-right:0.5rem ;
 }
 /* fifth section end */
 .sixth {
@@ -176,6 +181,7 @@ h6 {
   color: #777;
   margin: 0;
   padding-left: 3rem;
+  text-align: justify;
 }
 /* sixth section end */
 .seventh2 {
@@ -191,8 +197,10 @@ h6 {
 }
 .techno {
   color: #fff;
-  font-size: 22px;
+  font-size: 20px;
   padding-top: 2rem;
+  text-align: justify;
+  padding-right: 1rem;
 }
 .tech {
   font-size: 55px;

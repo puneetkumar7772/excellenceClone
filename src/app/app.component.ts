@@ -10,40 +10,22 @@ export class AppComponent {
   sidenavWidth = '0';
   image = 'inline';
 
-   isSidenavOpen = false;
-
   toggleSidenav(): void {
-    this.isSidenavOpen = !this.isSidenavOpen;
-  }
-
-  getSideNavStyles() {
-    let styles: {
-      [key: string]: string;
-    } = {
-      'background': '#fff',
-      '-webkit-clip-path': 'polygon(0 0,45% 0,100% 100%,0% 100%)',
-      'clip-path': 'polygon(0 0,45% 0,100% 100%,0% 100%)',
-      'position': 'fixed',
-      'height': '100vh',
-      'top': '0',
-      'bottom': '0',
-      'left': '0',
-      'z-index': '99999',
-      'transition': '1s',
-      'filter': 'drop-shadow(8px 0px 4px rgba(145,144,135,0.28))'
-    };
-
-    if (this.isSidenavOpen) {
-      styles['width'] = '31vw';
-
+    const logo = document.querySelector('.logo') as HTMLElement;
+    this.sidenavWidth = this.sidenavWidth === '0' ? '320px' : '0';
+    if (this.sidenavWidth === '0') {
+      logo.style.display = 'inline'
     } else {
-      styles['width'] = '0';
-      // Add other closed state styles here
+      logo.style.display = 'none'
     }
 
-    return styles;
   }
- hideNav(): void {
-  this.isSidenavOpen = false; // Close the sidebar
-}
+  hideNav(): void {
+    const logo = document.querySelector('.logo') as HTMLElement;
+    this.sidenavWidth = this.sidenavWidth === '0' ? '55px' : '0';
+    if (this.sidenavWidth === '0') {
+      logo.style.display = 'inline'
+    }
+
+  }
 }

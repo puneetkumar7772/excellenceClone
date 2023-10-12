@@ -118,7 +118,7 @@ a {
 /* Media query for tablets */
 @media screen and (min-width: 250px) and (max-width: 768px) {
   .portfolio {
-    left: 10px;
+    left: 0px;
     top: 0;
     width:100vw;
   }
@@ -169,7 +169,7 @@ a {
     font-size: 25px;
   }
   .first {
-    margin-left: 0rem;
+    margin-left: 1rem;
     margin-top: 0rem;
   }
 }

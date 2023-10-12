@@ -6,5 +6,10 @@ import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
   styleUrls: ['./mainhome.component.css']
 })
 export class MainhomeComponent {
+  activeIndex: number = 1; // Set the middle image as active by default
 
+
+  selectImage(index: number) {
+    this.activeIndex = index;
+  }
 }

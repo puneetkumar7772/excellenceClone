@@ -72,7 +72,8 @@ h6 {
   font-weight: 600;
   font-family: typold-thin;
   color: #777;
-  font-size: 18px;
+  font-size: 17px;
+  text-align: justify;
 }
 
 .third_subsection3{
@@ -105,6 +106,7 @@ h6 {
   font-size: 16px;
   color: #777;
   font-weight: 600;
+  text-align: justify;
 }
 /* fourth section end */
 .fifth_section{
@@ -136,6 +138,7 @@ h6 {
   color: #777;
   font-size: 16px;
   font-weight: 600;
+  text-align: justify;
 }
 /* fifth end */
 .seventh_section {
@@ -189,9 +192,11 @@ h6 {
   font-weight: 500;
   color: gray;
   padding-left: 3rem;
+  text-align: justify;
 }
-.client_para{
-  margin-top: 4rem
+
+.nav-link{
+  padding-left: 3vw;
 }
 .TechStack {
   font-size: 55px;
@@ -378,6 +383,13 @@ ul {
   padding-top: 2.5rem;
   font-weight: 600;
 }
+
+.client_cite{
+  color: #444;
+  text-align: center;
+  font-size: 20px;
+
+}
 @media screen  and (max-width: 1360px){
   .subeight2{
 display: grid;
@@ -398,13 +410,16 @@ grid-template-columns: 100%;
     left: 0px;
   }
   .first_section {
-    width:100%;
+    width:100vw;
   }
   .first_para {
     font-size: 22px;
   }
   .web_heading {
     font-size: 30px;
+  }
+  .third_section{
+    width: 100vw;
   }
   .third_subsection2 {
     display: grid;
@@ -523,7 +538,7 @@ grid-template-columns: 100%;
     padding-left: 0px;
   }
   .para3 {
-    font-size: 18px;
+    font-size: 16px;
     padding-left: 0rem;
     color: gray;
     font-weight: 600;

@@ -226,7 +226,7 @@ a {
 @media (max-width: 768px) {
   .firstsection {
     height: auto;
-    width: 93vw;
+    width: 100vw;
   }
 
   .firsthed {
@@ -243,9 +243,9 @@ a {
   }
 
   .career {
-    left: 20px;
-    right: 20px;
-    width: auto;
+    left: 0px;
+    right: 0px;
+    width: 100vw;
   }
   .subhed4{
     font-size: 23px;
@@ -263,11 +263,22 @@ a {
     }
     .jobdesc {
       padding-top: 20px;
+      text-align: justify;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
     }
     .row{
       width: 80.3vw;
       padding-left: 4px;
       padding-top: 40px;
+    }
+    .btn1{
+      padding-left: 0.5rem;
+    }
+    .para1 {
+      font-size: 16px;
+      padding-left: 1rem;
+      text-align: justify;
     }
 }
 
